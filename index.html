@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Project Search Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="enter-city">
+        <input type="search" id="city" placeholder="Enter a city..." required />
+        <input type="submit" value="Search" id="search" />
+      </form>
+      <div class="weather-currently">
+        <div>
+          <h1 class="currentCity" id="current-city">Zurich</h1>
+          <p class="weather-currently-detailed">
+            <span class="rightNow" id="rightNow"></span>, mostly sunny<br />
+            Humidity: <strong class>49%</strong>, Wind:
+            <strong class>5km/h</strong> SW
+          </p>
+        </div>
+        <div class="temperature-currently">
+          <span class="temperature-currently-icon">☀️</span>
+          <span
+            class="temperature-currently-number"
+            id="temperature-currently-number"
+            >17</span
+          >
+          <span class="temperature-currently-celsius">°C</span>
+        </div>
+      </div>
+      <footer>
+        <p>
+          This project was coded with love by
+          <a href="https://www.linkedin.com/in/sonjakolmer" target="_blank"
+            >Sonja Kolmer</a
+          >
+          and is
+          <a href="" target="_blank">on Github</a>
+          and
+          <a href="" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
